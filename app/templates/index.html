@@ -32,12 +32,12 @@
             </style>
         </noscript>
         <style>{{ config.style }}</style>
-        <title>Whoogle Search</title>
+        <title>SearchRightNow</title>
     </head>
     <body id="main" style="display: none; background-color: {{ '#000' if config.dark else '#fff' }}">
         <div class="search-container">
             <div class="logo-container">
-                {{ logo|safe }}
+                <center><h3>SearchRN</h3></center><br />
             </div>
             <form id="search-form" action="search" method="{{ 'get' if config.get_only else 'post' }}">
                 <div class="search-fields">
@@ -145,8 +145,8 @@
         </div>
         <footer>
             <p style="color: {{ '#fff' if config.dark else '#000' }};">
-                Whoogle Search v{{ version_number }} ||
-                <a id="gh-link" href="https://github.com/benbusby/whoogle-search">View on GitHub</a>
+                SearchRightNow v{{ version_number }} ||
+                <a id="gh-link" href="https://github.com/Swivro/whoogle-search">View on GitHub</a>
             </p>
         </footer>
     </body>
