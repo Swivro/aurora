@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="static/css/header.css">
         <link rel="stylesheet" href="static/css/{{ 'dark' if config.dark else 'light' }}-theme.css"/>
         <style>{{ config.style }}</style>
-        <title>{{ query }} - Whoogle Search</title>
+        <title>{{ query }} - SearchRN</title>
     </head>
     <body>
     {{ search_header|safe }}
@@ -18,8 +18,8 @@
     </body>
     <footer>
         <p style="color: {{ '#fff' if config.dark else '#000' }};">
-            Whoogle Search v{{ version_number }} ||
-            <a style="color: #685e79" href="https://github.com/benbusby/whoogle-search">View on GitHub</a>
+            SearchRightNow v{{ version_number }} ||
+            <a style="color: #685e79" href="https://github.com/Swivro/whoogle-search">View on GitHub</a>
         </p>
     </footer>
 	<script src="static/js/autocomplete.js"></script>
