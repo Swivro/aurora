@@ -22,22 +22,22 @@
 		<link rel="stylesheet" href="{{ cb_url(('dark' if config.dark else 'light') + '-theme.css') }}"/>
         {% endif %}
         <style>{{ config.style }}</style>
-        <title>{{ clean_query(query) }} - Whoogle Search</title>
+        <title>{{ clean_query(query) }} - Aurora Search</title>
     </head>
     <body>
     {{ search_header|safe }}
     {% if is_translation %}
     <iframe 
         id="lingva-iframe"
-        src="{{ lingva_url }}/auto/{{ translate_to }}/{{ translate_str }}">
+        src="{{ lingva_url }}/auto/{{ translate_to }}/{{ translate_str }}"
+	    style = "min-width=90%;">
     </iframe>
     {% endif %}
     {{ response|safe }}
     </body>
     <footer>
         <p class="footer">
-            Whoogle Search v{{ version_number }} ||
-            <a id="gh-link" href="https://github.com/benbusby/whoogle-search">{{ translation['github-link'] }}</a>
+            Aurora v{{ version_number }} ||
         </p>
     </footer>
     <script src="{{ cb_url('autocomplete.js') }}"></script>
