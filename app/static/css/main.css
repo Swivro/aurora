@@ -56,9 +56,11 @@ body {
     align-content: center;
     align-items: center;
     margin: auto;
-    border-radius: 0 0 10px 10px;
-    max-width: 600px;
+    border-radius: 8px;
+    max-width: 400px;
     -webkit-appearance: none;
+    background-color:#006aff;
+    color:white;
 }
 
 .config-div {
