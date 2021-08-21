@@ -97,7 +97,7 @@
     },
     "WHOOGLE_CONFIG_THEME": {
         "description": "[CONFIG] Set theme to 'dark', 'light', or 'system'",
-        "value": "system",
+        "value": "dark",
         "required": false
     },
     "WHOOGLE_CONFIG_SAFE": {
