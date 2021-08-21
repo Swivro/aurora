@@ -46,6 +46,7 @@ header {
     display: flex;
     width: 100%;
     margin: 0px;
+    border-color: #3c3c3c;
 }
 
 .search-input {
