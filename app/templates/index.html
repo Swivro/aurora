@@ -10,14 +10,11 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="{{ cb_url('variables.css') }}">
-        {% if config.theme  %}
-            {% if config.theme == 'system' %}
             <style>
-                @import "{{ cb_url('light-theme.css') }}" screen;
-                @import "{{ cb_url('dark-theme.css') }}" screen and (prefers-color-scheme: dark);
+                @import "{{ cb_url('dark-theme.css') }}" screen;
             </style>
             {% else %}
-            <link rel="stylesheet" href="{{ cb_url(config.theme + '-theme.css') }}"/>
+            <link rel="stylesheet" href="{{ cb_url(dark-theme.css + '-theme.css') }}"/>
             {% endif %}
         {% else %}
 		<link rel="stylesheet" href="{{ cb_url(('dark' if config.dark else 'light') + '-theme.css') }}"/>
@@ -62,7 +59,7 @@
 			</form>
 		{% if not config_disabled %}
 			<br/>
-			<button id="config-collapsible" class="collapsible">{{ translation['config'] }}</button>
+			<button id="config-collapsible" style = "display:none;" class="collapsible">{{ translation['config'] }}</button>
 			<div class="content">
 			<div class="config-fields">
 				<form id="config-form" action="config" method="post">
