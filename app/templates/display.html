@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="{{ cb_url(('dark' if config.dark else 'light') + '-theme.css') }}"/>
         {% endif %}
         <style>{{ config.style }}</style>
-        <title>{{ clean_query(query) }} - Aurora Search</title>
+        <title>{{ clean_query(query) }} - Swivro Search</title>
     </head>
     <body>
     {{ search_header|safe }}
@@ -37,7 +37,7 @@
     </body>
     <footer>
         <p class="footer">
-            Aurora v{{ version_number }} ||
+            Swivro Search v{{ version_number }} ||
         </p>
     </footer>
     <script src="{{ cb_url('autocomplete.js') }}"></script>
